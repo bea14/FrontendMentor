@@ -1,0 +1,154 @@
+html {
+
+}
+
+body {
+    background: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    max-width: 395px;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 1.75rem 0 0 3rem;
+}
+
+.banner {
+    margin-top:4.5em;
+    margin-bottom:0;
+    width: 100%;
+    z-index: 500;
+}
+
+.banner img {
+    max-width: 395px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.main {
+    background-color: white;
+    margin-bottom: 4em;
+    margin-top:-1.7em;
+    padding-top:0.5rem;
+    border-radius: 20px;
+    height: 53vh;
+}
+
+h1 {
+    font-weight : 700;
+    font-size: 22px;
+}
+
+.UpperPart{
+    padding-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+p {
+    font-size: 18px;
+    padding: 0 20px;
+    color: grey;
+}
+
+.orderInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto 1.5em auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    width: 300px;
+}
+
+.bold {
+    font-weight: 900;
+    color: black
+}
+
+.orderInfos_link{
+    color:hsl(245, 75%, 52%);
+    border-bottom : 2px solid hsl(245, 75%, 52%)
+}
+
+.orderInfos_link:hover {
+    border-bottom : unset;
+    color:hsl(245, 75%, 62%);
+}
+/*boutons*/
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.button_pay {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    width: 275px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.button_pay:hover{
+    background-color: hsl(245, 75%, 62%);
+}
+.button_cancel{
+    font-weight: 900;
+    height: 50px;
+    width: 320px;
+    margin: 0 auto;
+    background-color:white;
+    border: 0;
+    color: grey;
+}
+
+.button_cancel:hover{
+    color: hsl(223, 47%, 23%)
+}
+
+
+/*responsive*/
+@media screen and (min-width : 990px){
+    body {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/pattern-background-desktop.svg)
+    }
+    .banner {
+        max-width: 450px;
+    }
+    .banner img {
+        max-width: 450px;
+    }
+    .main{
+        max-width: 450px;
+        padding-top:1.2rem;
+    }
+    h1 {
+        font-weight : 700;
+        font-size: 28px;
+    }
+    .orderInfos{
+        justify-content: space-evenly;
+        margin: 0 auto 1.5em auto;
+        width: 350px;
+    }
+    .button_pay {
+       font-size: 16px;
+        width: 350px;
+        margin: 1.5rem auto;
+    }
+    .button_cancel{
+        margin: -0.7rem auto;
+        background-color:white;
+        border: 0;
+        color: grey;
+    }
+}
