@@ -1,0 +1,101 @@
+html{
+    box-sizing: border-box;
+    background-color: hsl(185, 75%, 39%);
+}
+
+body {    
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url("./images/bg-pattern-bottom.svg") right -775px bottom -350px no-repeat,url("./images/bg-pattern-top.svg") top -775px left -350px no-repeat;
+   /*height: 100vh;*/
+   margin: 0;
+   padding: 0;
+}
+
+.card {
+    background-color: white;
+    margin: 9rem 1.75rem;
+    border-radius: 10px;
+    width: 320px;
+    height: 375px;
+}
+
+.card-img {
+   width: 100%;
+   height: 9rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	overflow: hidden;
+}
+
+.card-description {
+    text-align: center;
+    margin-top: -18%;
+}
+
+.card-avatar img{
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-text{
+    text-align: center;
+    margin-top: -0.5rem;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.age {
+    color: hsl(227, 10%, 46%);
+    padding: 0;
+    font-weight: 400;
+}
+
+.town {
+    color: hsl(227, 10%, 46%);
+    padding: 0;
+    font-weight: 400;
+    margin-top: -0.5rem;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    text-align: center;
+    padding: 0.8rem 2rem ;
+}
+
+.card-footer p{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.card-footer span {
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    letter-spacing: 2px;
+}
+/*responsive*/
+@media screen and (min-width : 990px){
+    body {
+        max-width: 1440px;
+        width: 1440px;
+        background: url("images/bg-pattern-bottom.svg") right -225px bottom -650px no-repeat,url("images/bg-pattern-top.svg") top -550px left -350px no-repeat;
+    }
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 11rem;
+        width: 350px;
+    }
+}
