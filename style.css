@@ -1,0 +1,65 @@
+html{
+    box-sizing: border-box;
+}
+
+body {    
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin : 2rem auto;
+}
+
+.center{
+    text-align: center
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#screen, #resultScreen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    color: #000
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+button{
+    padding: 0.5rem;
+}
+
+.clear, .submit {
+    background-color:#fff;
+    width: 100px; 
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+input {margin: 0 auto;}
